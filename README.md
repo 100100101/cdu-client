@@ -1,5 +1,7 @@
 ## CDU Client
 
+![Screencast](assets/screencast.gif)
+
 `1.` Install dependencies
 
 ### `$ yarn`
