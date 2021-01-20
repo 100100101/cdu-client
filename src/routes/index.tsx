@@ -2,11 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom'
 import { useKeycloak } from '@react-keycloak/web'
 import 'fontsource-roboto'
+
 import HomePage from 'pages/Home'
 import LoginPage from 'pages/Login'
+
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
+
 import { PrivateRoute } from './utils'
 
 const useStyles = makeStyles((theme: Theme) =>

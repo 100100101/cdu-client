@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useKeycloak } from '@react-keycloak/web'
-import { ROLE_SCOPE_WRITE, ROLE_SCOPE_READ } from 'constants/index'
 import TextField from '@material-ui/core/TextField'
+
+import {
+  ROLE_SCOPE_WRITE,
+  ROLE_SCOPE_READ,
+  MS_IN_SECOND,
+} from 'constants/index'
 import { msToHoursMinutesSeconds } from 'utils/time'
-import { MS_IN_SECOND } from 'constants/index'
 
 const TokenLifetime: React.FC = () => {
   const { keycloak } = useKeycloak()

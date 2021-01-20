@@ -1,8 +1,11 @@
 import React from 'react'
 import { useKeycloak } from '@react-keycloak/web'
+
 import TokenLifetime from 'components/TokenLifetime'
+
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
+
 const Home: React.FC = () => {
   const { keycloak } = useKeycloak()
   const tokenParsed: any = keycloak?.tokenParsed
